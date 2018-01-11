@@ -1,0 +1,26 @@
+.row{
+  display: grid;
+  grid-template-columns: 8% 92%
+}
+
+.grid > .row {
+  background: #eee;
+  padding: 1em;
+}
+
+.grid > .row:nth-child(odd) {
+  background: #ddd;
+  padding: 1em;
+}
+
+.thumbnail img{
+  border: 1px solid rgba(0, 0, 0, 0.7);
+  border-radius: 4px;
+  padding: 5px;
+  width: 38%;
+  height: 38%;
+}
+
+.title a{
+  color: rgb(30, 120, 230);
+}

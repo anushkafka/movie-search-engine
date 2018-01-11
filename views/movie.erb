@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <title>Movie</title>
+      <link rel="stylesheet" href="/stylesheets/movie.css">
+      <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+  </head>
+
+  <% if @no_error%>
+    <body>
+      <header>
+        <div class="head-top">
+          <div class="block-1"><%= @title %></div>
+          <div class="block-2"> <img src="/star.png"> <%= @rating %></div>
+        </div>
+
+        <div class="head-bottom">
+          <div class="info"><%= @released %></div>
+          <div class="info"><%= @runtime %></div>
+          <div class="info"><%= @genre %></div>
+          <div class="info"><%= @language %></div>
+        </div> 
+      </header>
+
+      <div class="wrapper-main"> 
+        <div class="wrapper-left">
+            <img src=<%= @poster %> >
+        </div>
+
+        <div class="wrapper-right">
+          <div class="main-plot"> <%= @plot %> </div>
+          <div class="main">Director: <%= @director %></div>
+          <div class="main">Writer: <%= @writer %></div>
+          <div class="main">Actors: <%= @actors %></div>
+        </div>
+      </div>
+    </body>
+  <% else %>
+    <body>
+      <p>Movie not found</p>
+    </body>
+  <% end %>
+</html>

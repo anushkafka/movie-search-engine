@@ -1,0 +1,57 @@
+* {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+header{
+  background-color: rgb(57, 59, 62);
+  color: white;
+  padding: 10px;
+}
+.head-top{ 
+  display: flex;
+  align-content: space-around;
+  justify-content: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.block-1{
+  justify-content: flex-start;
+  width: 80%;
+  font-size: 35px;
+}
+.block-2{
+  justify-content: flex-start;
+  width: 20%;
+}
+.head-bottom{
+  display: flex;
+  align-content: space-around;
+  justify-content: center;
+}
+.info{
+  justify-content: flex-start;
+  width: 25%;
+}
+.wrapper-main{
+  display: flex;
+  align-content: space-around;
+  justify-content: center;
+}
+.wrapper-left{
+  border: dashed 1px rgb(176, 172, 172);
+  padding: 10px;
+}
+.wrapper-right{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border: dashed 1px rgb(176, 172, 172);
+}
+.main{
+  height: 15%;
+  color: rgb(52, 63, 67);
+}
+.main-plot{
+  height: 30%;
+  color: rgb(52, 63, 67);;
+  
+}
